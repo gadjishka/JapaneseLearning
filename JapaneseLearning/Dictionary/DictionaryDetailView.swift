@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct DictionaryDetailView: View {
-    public var item: Hieroglyph // Подставьте нужный тип данных
+    @EnvironmentObject private var dictionaryManager: DictionaryHiragana
+    @State var item: Hieroglyph // Подставьте нужный тип данных
+    
+   
     
     var body: some View {
         ZStack {
@@ -23,7 +26,7 @@ struct DictionaryDetailView: View {
                         .background(Color(red: 0.4627, green: 0.8392, blue: 1.0))
                         .cornerRadius(10)
                         .shadow(radius: 10)
-                        .padding()
+                        .padding(.bottom, 10)
                 }
                 
                 
@@ -42,17 +45,19 @@ struct DictionaryDetailView: View {
                 Spacer()
                 
                 Button {
-                    //
+                    dictionaryManager.addHierogliph(hieroglyph: item)
+                    item.learnHieroglyph()
                 } label: {
                     Text("Добавить")
                         .font(.title3)
                         .foregroundColor(.white)
                 }
                 .frame(width: 300, height: 50)
-                .background(Color.green)
+                .background(item.learned ? Color.gray : Color.green)
                 .cornerRadius(10)
                 .shadow(radius: 7)
                 .padding()
+                .disabled(item.learned)
             }
         }
     }

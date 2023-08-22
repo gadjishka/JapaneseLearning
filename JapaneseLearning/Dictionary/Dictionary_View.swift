@@ -8,25 +8,33 @@
 import SwiftUI
 
 struct Dictionary_View: View {
-    private var dictLearn = ["a", "o", "wa", "n", "ka", "ki", "e"]
-    private var dictNoLearn = ["ri", "ro", "ru", "mo", "mu", "na", "ne"]
+    @EnvironmentObject private var dictionaryManager: DictionaryHiragana
+    
     var body: some View {
         NavigationView {
             ZStack {
                 Color(red: 0.23, green: 0.64, blue: 0.82).edgesIgnoringSafeArea(.top)
-                ScrollView(showsIndicators: false) {
-                    VStack {
-                        DictionaryRow(learn: "Изученные иероглифы", dict: dictLearn, isEnable: true)
-                        DictionaryRow(learn: "Неизученные иероглифы", dict: dictNoLearn, isEnable: false)
+                VStack {
+                    ScrollView(showsIndicators: false) {
+                        VStack {
+                            DictionaryRow(learn: "Изученные иероглифы", dict: dictionaryManager.currentDictionary.learnedHieroglyphs)
+                            
+                            DictionaryRow(learn: "Неизученные иероглифы", dict: dictionaryManager.currentDictionary.notLearnedHieroglyphs)
 
+                        }
                     }
+//                    Button {
+//                        dictionaryManager.resetSettings()
+//                    } label: {
+//                        Text("Сброс")
+//                    }
+//                    .frame(width: 300, height: 40)
+//                    .background(Color.gray)
                 }
+                
             }
-            
-            
-            .navigationTitle("Словарь")
-            .toolbar(.hidden, for: .navigationBar)
         }
+        .environmentObject(DictionaryHiragana.shared)
     }
 }
 
@@ -34,5 +42,6 @@ struct Dictionary_View: View {
 struct Dictionary_View_Previews: PreviewProvider {
     static var previews: some View {
         Dictionary_View()
+            .environmentObject(DictionaryHiragana.shared)
     }
 }

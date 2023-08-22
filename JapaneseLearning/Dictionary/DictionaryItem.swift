@@ -8,35 +8,38 @@
 import SwiftUI
 
 struct DictionaryItem: View {
+    @EnvironmentObject private var dictionaryManager: DictionaryHiragana
     
-    public var item: String
-    public var isEnable: Bool
+    public var item: Hieroglyph
+    
     var body: some View {
-        Button {
-            //
+        NavigationLink {
+            DictionaryDetailView(item: item)
         } label: {
             VStack {
-                Image("hiragana-\(item)")
+                Image(item.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 80, height: 80)
                 
-                Text(item)
+                Text(item.pronunciation)
                     .font(.title2)
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
             }
             
         } .frame(width: 100, height: 130)
-            .background(isEnable ? Color(red: 0.4627, green: 0.8392, blue: 1.0) : Color.gray)
+            .background(item.learned ? Color(red: 0.4627, green: 0.8392, blue: 1.0) : Color.gray)
             .cornerRadius(10)
             .padding(5)
+            .environmentObject(DictionaryHiragana.shared)
         
     }
 }
 
 struct DictionaryItem_Previews: PreviewProvider {
     static var previews: some View {
-        DictionaryItem(item: "a", isEnable: false)
+        DictionaryItem(item: Hieroglyph(pronunciation: "a", image: "hiragana-a"))
+            .environmentObject(DictionaryHiragana.shared)
     }
 }

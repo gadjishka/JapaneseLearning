@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct DictionaryRow: View {
+    @EnvironmentObject private var dictionaryManager: DictionaryHiragana
+    
     public var learn: String
-    public var dict: [String]
-    public var isEnable: Bool
+    public var dict: [Hieroglyph]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -22,7 +23,8 @@ struct DictionaryRow: View {
                     ForEach(0..<3) { column in
                         let index = row * 3 + column
                         if index < dict.count {
-                            DictionaryItem(item: dict[index], isEnable: isEnable)
+                            DictionaryItem(item: dict[index])
+                                
                         } else {
                             Spacer()
                         }
@@ -31,11 +33,15 @@ struct DictionaryRow: View {
             }
         }
         .padding()
+        .environmentObject(DictionaryHiragana.shared)
+        
+        
     }
 }
 
 struct DictionaryRow_Previews: PreviewProvider {
     static var previews: some View {
-        DictionaryRow(learn: "Изученные иероглифы", dict: ["a", "o", "wa"], isEnable: true)
+        DictionaryRow(learn: "Изученные иероглифы", dict: DictionaryHiragana.shared.currentDictionary.learnedHieroglyphs)
+            .environmentObject(DictionaryHiragana.shared)
     }
 }

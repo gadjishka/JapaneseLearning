@@ -108,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				3270639F2A936D81006D994A /* Dictionary_View.swift */,
-				327063A42A9377F0006D994A /* DictionaryItem.swift */,
 				327063A62A93788B006D994A /* DictionaryRow.swift */,
+				327063A42A9377F0006D994A /* DictionaryItem.swift */,
 				327063A82A93831E006D994A /* DictionaryDetailView.swift */,
 				327063AD2A93929D006D994A /* DataModel.swift */,
 			);

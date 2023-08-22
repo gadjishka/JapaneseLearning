@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Hieroglyph: Codable, Decodable {
+struct Hieroglyph: Hashable, Codable {
+    
     var pronunciation: String
     var image: String
     var usageExamples: String?
@@ -20,7 +21,7 @@ struct Hieroglyph: Codable, Decodable {
         self.learned = learned
     }
     
-    mutating func learnHierogliph() {
+    mutating func learnHieroglyph() {
         self.learned = true
     }
 }

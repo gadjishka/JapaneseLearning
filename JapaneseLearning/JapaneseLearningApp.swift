@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct JapaneseLearningApp: App {
+    
+    @StateObject private var dictionaryManager = DictionaryHiragana.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light)
+                .environmentObject(dictionaryManager)
         }
     }
 }

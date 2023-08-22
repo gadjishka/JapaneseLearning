@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var dictionaryManager: DictionaryHiragana
     var body: some View {
         TabView {
             Group {
@@ -16,6 +17,7 @@ struct ContentView: View {
                         Label("Тренировка", systemImage: "dumbbell")
                     }
                 Dictionary_View()
+                    .environmentObject(dictionaryManager)
                     .tabItem {
                         Label("Словарь", systemImage: "book")
                     }
@@ -34,6 +36,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(DictionaryHiragana())
         
     }
 }
