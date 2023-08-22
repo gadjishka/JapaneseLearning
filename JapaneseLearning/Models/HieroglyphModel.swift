@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Hieroglyph {
+struct Hieroglyph: Codable, Decodable {
     var pronunciation: String
     var image: String
     var usageExamples: String?

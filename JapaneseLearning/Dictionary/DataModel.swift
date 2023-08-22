@@ -7,10 +7,19 @@
 
 import Foundation
 
-struct DataModel {
-    var learnedHieroglyphs: [Hieroglyph] = []
+enum KeysUserDefaults{
+    static let training = "training"
+}
+
+struct Training:Codable{
+    var learnedHieroglyphs: [Hieroglyph]
+    var notLearnedHieroglyphs: [Hieroglyph]
+}
+
+class Settings{
+    static var shared = Settings()
     
-    var notLearnedHieroglyphs: [Hieroglyph] = [
+    private let defaultHieroglyphs = Training(learnedHieroglyphs: [], notLearnedHieroglyphs: [
         Hieroglyph(pronunciation: "a", image: "hiragana-a"),
         Hieroglyph(pronunciation: "chi", image: "hiragana-chi"),
         Hieroglyph(pronunciation: "e", image: "hiragana-e"),
@@ -56,57 +65,37 @@ struct DataModel {
         Hieroglyph(pronunciation: "wo", image: "hiragana-wo"),
         Hieroglyph(pronunciation: "ya", image: "hiragana-ya"),
         Hieroglyph(pronunciation: "yo", image: "hiragana-yo"),
-        Hieroglyph(pronunciation: "yu", image: "hiragana-yu")]
+        Hieroglyph(pronunciation: "yu", image: "hiragana-yu")])
     
-    mutating func addHieroglyph(hieroglyph: Hieroglyph) {
-        if let index = notLearnedHieroglyphs.firstIndex(where: {$0.pronunciation == hieroglyph.pronunciation}) {
-            notLearnedHieroglyphs.remove(at: index)
-        }
-        learnedHieroglyphs.append(hieroglyph)
-        
-        
-    }
-}
-
-var data = DataModel()
-
-
-enum KeysUserDefaults{
-    static let settingsGame = "settingsGame"
-}
-
-struct SettingsGame:Codable{
-    var players: Int
-    var colorForGame: String
-}
-
-class Settings{
-    static var shared = Settings()
-    
-    private let defaultSettings = SettingsGame(players: 4, colorForGame: "Gray")
-    
-    var currentSettings: SettingsGame{
+    var currentHieroglyphs: Training{
         get{
-            if let data = UserDefaults.standard.object(forKey: KeysUserDefaults.settingsGame) as? Data{
-                return try! PropertyListDecoder().decode(SettingsGame.self, from: data)
+            if let data = UserDefaults.standard.object(forKey: KeysUserDefaults.training) as? Data{
+                return try! PropertyListDecoder().decode(Training.self, from: data)
             }
             else {
-                if let data = try? PropertyListEncoder().encode(defaultSettings){
-                    UserDefaults.standard.setValue(data, forKey: KeysUserDefaults.settingsGame)
+                if let data = try? PropertyListEncoder().encode(defaultHieroglyphs){
+                    UserDefaults.standard.setValue(data, forKey: KeysUserDefaults.training)
                 }
-                return defaultSettings
+                return defaultHieroglyphs
             }
         }
         set{
             if let data = try? PropertyListEncoder().encode(newValue){
-                UserDefaults.standard.setValue(data, forKey: KeysUserDefaults.settingsGame)
+                UserDefaults.standard.setValue(data, forKey: KeysUserDefaults.training)
             }
             
         }
     }
     
     func resetSettings(){
-        currentSettings = defaultSettings
+        currentHieroglyphs = defaultHieroglyphs
+    }
+    
+    func addHierogliph(hieroglyph: Hieroglyph) {
+        if let index = currentHieroglyphs.notLearnedHieroglyphs.firstIndex(where: {$0.pronunciation == hieroglyph.pronunciation}) {
+            currentHieroglyphs.notLearnedHieroglyphs.remove(at: index)
+        }
+        currentHieroglyphs.learnedHieroglyphs.append(hieroglyph)
     }
     
 }
