@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3207141B2A8E857900C96592 /* JapaneseLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207141A2A8E857900C96592 /* JapaneseLearningApp.swift */; };
+		3207141D2A8E857900C96592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207141C2A8E857900C96592 /* ContentView.swift */; };
+		3207141F2A8E857A00C96592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3207141E2A8E857A00C96592 /* Assets.xcassets */; };
+		320714222A8E857A00C96592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320714212A8E857A00C96592 /* Preview Assets.xcassets */; };
+		320714292A8E872300C96592 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320714282A8E872300C96592 /* MainMenu.swift */; };
+		3207142B2A8E996700C96592 /* Training_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207142A2A8E996700C96592 /* Training_View.swift */; };
+		3207142D2A8EA8CB00C96592 /* TrainingAnswersRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207142C2A8EA8CB00C96592 /* TrainingAnswersRow.swift */; };
+		3207142F2A8EA8DB00C96592 /* TrainingAnswersItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207142E2A8EA8DB00C96592 /* TrainingAnswersItem.swift */; };
+		320714312A8EB03500C96592 /* TrainingQuestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320714302A8EB03500C96592 /* TrainingQuestionItem.swift */; };
+		327063A02A936D81006D994A /* Dictionary_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270639F2A936D81006D994A /* Dictionary_View.swift */; };
+		327063A52A9377F0006D994A /* DictionaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063A42A9377F0006D994A /* DictionaryItem.swift */; };
+		327063A72A93788B006D994A /* DictionaryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063A62A93788B006D994A /* DictionaryRow.swift */; };
+		327063A92A93831E006D994A /* DictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063A82A93831E006D994A /* DictionaryDetailView.swift */; };
+		327063AB2A938378006D994A /* HieroglyphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063AA2A938378006D994A /* HieroglyphModel.swift */; };
+		327063AE2A93929D006D994A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063AD2A93929D006D994A /* DataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		320714172A8E857900C96592 /* JapaneseLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3207141A2A8E857900C96592 /* JapaneseLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseLearningApp.swift; sourceTree = "<group>"; };
+		3207141C2A8E857900C96592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3207141E2A8E857A00C96592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		320714212A8E857A00C96592 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		320714282A8E872300C96592 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		3207142A2A8E996700C96592 /* Training_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training_View.swift; sourceTree = "<group>"; };
+		3207142C2A8EA8CB00C96592 /* TrainingAnswersRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAnswersRow.swift; sourceTree = "<group>"; };
+		3207142E2A8EA8DB00C96592 /* TrainingAnswersItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAnswersItem.swift; sourceTree = "<group>"; };
+		320714302A8EB03500C96592 /* TrainingQuestionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingQuestionItem.swift; sourceTree = "<group>"; };
+		3270639F2A936D81006D994A /* Dictionary_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary_View.swift; sourceTree = "<group>"; };
+		327063A42A9377F0006D994A /* DictionaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryItem.swift; sourceTree = "<group>"; };
+		327063A62A93788B006D994A /* DictionaryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRow.swift; sourceTree = "<group>"; };
+		327063A82A93831E006D994A /* DictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailView.swift; sourceTree = "<group>"; };
+		327063AA2A938378006D994A /* HieroglyphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HieroglyphModel.swift; sourceTree = "<group>"; };
+		327063AD2A93929D006D994A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		320714142A8E857900C96592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3207140E2A8E857900C96592 = {
+			isa = PBXGroup;
+			children = (
+				320714192A8E857900C96592 /* JapaneseLearning */,
+				320714182A8E857900C96592 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		320714182A8E857900C96592 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320714172A8E857900C96592 /* JapaneseLearning.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320714192A8E857900C96592 /* JapaneseLearning */ = {
+			isa = PBXGroup;
+			children = (
+				3207141A2A8E857900C96592 /* JapaneseLearningApp.swift */,
+				3207141C2A8E857900C96592 /* ContentView.swift */,
+				3207141E2A8E857A00C96592 /* Assets.xcassets */,
+				320714202A8E857A00C96592 /* Preview Content */,
+				320714282A8E872300C96592 /* MainMenu.swift */,
+				327063AC2A93844E006D994A /* Models */,
+				327063A32A9377D8006D994A /* Dictionary */,
+				3270639C2A936CA1006D994A /* Training */,
+			);
+			path = JapaneseLearning;
+			sourceTree = "<group>";
+		};
+		320714202A8E857A00C96592 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				320714212A8E857A00C96592 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3270639C2A936CA1006D994A /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				3207142A2A8E996700C96592 /* Training_View.swift */,
+				320714302A8EB03500C96592 /* TrainingQuestionItem.swift */,
+				3207142C2A8EA8CB00C96592 /* TrainingAnswersRow.swift */,
+				3207142E2A8EA8DB00C96592 /* TrainingAnswersItem.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		327063A32A9377D8006D994A /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				3270639F2A936D81006D994A /* Dictionary_View.swift */,
+				327063A42A9377F0006D994A /* DictionaryItem.swift */,
+				327063A62A93788B006D994A /* DictionaryRow.swift */,
+				327063A82A93831E006D994A /* DictionaryDetailView.swift */,
+				327063AD2A93929D006D994A /* DataModel.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		327063AC2A93844E006D994A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				327063AA2A938378006D994A /* HieroglyphModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		320714162A8E857900C96592 /* JapaneseLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320714252A8E857A00C96592 /* Build configuration list for PBXNativeTarget "JapaneseLearning" */;
+			buildPhases = (
+				320714132A8E857900C96592 /* Sources */,
+				320714142A8E857900C96592 /* Frameworks */,
+				320714152A8E857900C96592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapaneseLearning;
+			productName = JapaneseLearning;
+			productReference = 320714172A8E857900C96592 /* JapaneseLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3207140F2A8E857900C96592 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					320714162A8E857900C96592 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 320714122A8E857900C96592 /* Build configuration list for PBXProject "JapaneseLearning" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3207140E2A8E857900C96592;
+			productRefGroup = 320714182A8E857900C96592 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				320714162A8E857900C96592 /* JapaneseLearning */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		320714152A8E857900C96592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320714222A8E857A00C96592 /* Preview Assets.xcassets in Resources */,
+				3207141F2A8E857A00C96592 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		320714132A8E857900C96592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327063AB2A938378006D994A /* HieroglyphModel.swift in Sources */,
+				327063A02A936D81006D994A /* Dictionary_View.swift in Sources */,
+				3207142B2A8E996700C96592 /* Training_View.swift in Sources */,
+				3207141D2A8E857900C96592 /* ContentView.swift in Sources */,
+				3207142D2A8EA8CB00C96592 /* TrainingAnswersRow.swift in Sources */,
+				3207141B2A8E857900C96592 /* JapaneseLearningApp.swift in Sources */,
+				327063AE2A93929D006D994A /* DataModel.swift in Sources */,
+				320714312A8EB03500C96592 /* TrainingQuestionItem.swift in Sources */,
+				327063A72A93788B006D994A /* DictionaryRow.swift in Sources */,
+				327063A52A9377F0006D994A /* DictionaryItem.swift in Sources */,
+				3207142F2A8EA8DB00C96592 /* TrainingAnswersItem.swift in Sources */,
+				320714292A8E872300C96592 /* MainMenu.swift in Sources */,
+				327063A92A93831E006D994A /* DictionaryDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		320714232A8E857A00C96592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		320714242A8E857A00C96592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		320714262A8E857A00C96592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JapaneseLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = Q7HLS9L7NM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gadji.JapaneseLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		320714272A8E857A00C96592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JapaneseLearning/Preview Content\"";
+				DEVELOPMENT_TEAM = Q7HLS9L7NM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gadji.JapaneseLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		320714122A8E857900C96592 /* Build configuration list for PBXProject "JapaneseLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320714232A8E857A00C96592 /* Debug */,
+				320714242A8E857A00C96592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320714252A8E857A00C96592 /* Build configuration list for PBXNativeTarget "JapaneseLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320714262A8E857A00C96592 /* Debug */,
+				320714272A8E857A00C96592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3207140F2A8E857900C96592 /* Project object */;
+}
