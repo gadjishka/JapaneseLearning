@@ -33,8 +33,11 @@ struct Dictionary_View: View {
                 }
                 
             }
+            .navigationTitle("Словарь")
+            .toolbar(.hidden, for: .navigationBar)
         }
         .environmentObject(DictionaryHiragana.shared)
+        
     }
 }
 

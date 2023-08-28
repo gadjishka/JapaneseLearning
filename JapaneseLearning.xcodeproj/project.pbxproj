@@ -16,12 +16,14 @@
 		3207142D2A8EA8CB00C96592 /* TrainingAnswersRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207142C2A8EA8CB00C96592 /* TrainingAnswersRow.swift */; };
 		3207142F2A8EA8DB00C96592 /* TrainingAnswersItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207142E2A8EA8DB00C96592 /* TrainingAnswersItem.swift */; };
 		320714312A8EB03500C96592 /* TrainingQuestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320714302A8EB03500C96592 /* TrainingQuestionItem.swift */; };
+		321E317A2A950E2A00947484 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E31792A950E2A00947484 /* test.swift */; };
+		32257A4A2A975CBD0082359C /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32257A492A975CBD0082359C /* TrainingViewModel.swift */; };
 		327063A02A936D81006D994A /* Dictionary_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270639F2A936D81006D994A /* Dictionary_View.swift */; };
 		327063A52A9377F0006D994A /* DictionaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063A42A9377F0006D994A /* DictionaryItem.swift */; };
 		327063A72A93788B006D994A /* DictionaryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063A62A93788B006D994A /* DictionaryRow.swift */; };
 		327063A92A93831E006D994A /* DictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063A82A93831E006D994A /* DictionaryDetailView.swift */; };
 		327063AB2A938378006D994A /* HieroglyphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063AA2A938378006D994A /* HieroglyphModel.swift */; };
-		327063AE2A93929D006D994A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063AD2A93929D006D994A /* DataModel.swift */; };
+		327063AE2A93929D006D994A /* DictionaryHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063AD2A93929D006D994A /* DictionaryHiragana.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +37,14 @@
 		3207142C2A8EA8CB00C96592 /* TrainingAnswersRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAnswersRow.swift; sourceTree = "<group>"; };
 		3207142E2A8EA8DB00C96592 /* TrainingAnswersItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAnswersItem.swift; sourceTree = "<group>"; };
 		320714302A8EB03500C96592 /* TrainingQuestionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingQuestionItem.swift; sourceTree = "<group>"; };
+		321E31792A950E2A00947484 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		32257A492A975CBD0082359C /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
 		3270639F2A936D81006D994A /* Dictionary_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary_View.swift; sourceTree = "<group>"; };
 		327063A42A9377F0006D994A /* DictionaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryItem.swift; sourceTree = "<group>"; };
 		327063A62A93788B006D994A /* DictionaryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRow.swift; sourceTree = "<group>"; };
 		327063A82A93831E006D994A /* DictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailView.swift; sourceTree = "<group>"; };
 		327063AA2A938378006D994A /* HieroglyphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HieroglyphModel.swift; sourceTree = "<group>"; };
-		327063AD2A93929D006D994A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		327063AD2A93929D006D994A /* DictionaryHiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHiragana.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				327063AC2A93844E006D994A /* Models */,
 				327063A32A9377D8006D994A /* Dictionary */,
 				3270639C2A936CA1006D994A /* Training */,
+				321E31792A950E2A00947484 /* test.swift */,
 			);
 			path = JapaneseLearning;
 			sourceTree = "<group>";
@@ -111,7 +116,7 @@
 				327063A62A93788B006D994A /* DictionaryRow.swift */,
 				327063A42A9377F0006D994A /* DictionaryItem.swift */,
 				327063A82A93831E006D994A /* DictionaryDetailView.swift */,
-				327063AD2A93929D006D994A /* DataModel.swift */,
+				327063AD2A93929D006D994A /* DictionaryHiragana.swift */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				327063AA2A938378006D994A /* HieroglyphModel.swift */,
+				32257A492A975CBD0082359C /* TrainingViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,13 +206,15 @@
 				3207141D2A8E857900C96592 /* ContentView.swift in Sources */,
 				3207142D2A8EA8CB00C96592 /* TrainingAnswersRow.swift in Sources */,
 				3207141B2A8E857900C96592 /* JapaneseLearningApp.swift in Sources */,
-				327063AE2A93929D006D994A /* DataModel.swift in Sources */,
+				327063AE2A93929D006D994A /* DictionaryHiragana.swift in Sources */,
 				320714312A8EB03500C96592 /* TrainingQuestionItem.swift in Sources */,
 				327063A72A93788B006D994A /* DictionaryRow.swift in Sources */,
+				32257A4A2A975CBD0082359C /* TrainingViewModel.swift in Sources */,
 				327063A52A9377F0006D994A /* DictionaryItem.swift in Sources */,
 				3207142F2A8EA8DB00C96592 /* TrainingAnswersItem.swift in Sources */,
 				320714292A8E872300C96592 /* MainMenu.swift in Sources */,
 				327063A92A93831E006D994A /* DictionaryDetailView.swift in Sources */,
+				321E317A2A950E2A00947484 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
