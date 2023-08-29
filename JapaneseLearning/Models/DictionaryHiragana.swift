@@ -85,6 +85,9 @@ class DictionaryHiragana: ObservableObject {
                 UserDefaults.standard.setValue(data, forKey: KeysUserDefaults.training)
             }
         }
+        TrainingViewModel.shared.allWords = currentDictionary.notLearnedHieroglyphs
+        TrainingViewModel.shared.learnedWords = currentDictionary.learnedHieroglyphs
+
     }
     
     private func saveDictToDefaults() {

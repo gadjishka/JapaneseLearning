@@ -24,6 +24,7 @@
 		327063A92A93831E006D994A /* DictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063A82A93831E006D994A /* DictionaryDetailView.swift */; };
 		327063AB2A938378006D994A /* HieroglyphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063AA2A938378006D994A /* HieroglyphModel.swift */; };
 		327063AE2A93929D006D994A /* DictionaryHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327063AD2A93929D006D994A /* DictionaryHiragana.swift */; };
+		328B7C402A9CC98900780FEB /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B7C3F2A9CC98900780FEB /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		327063A82A93831E006D994A /* DictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailView.swift; sourceTree = "<group>"; };
 		327063AA2A938378006D994A /* HieroglyphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HieroglyphModel.swift; sourceTree = "<group>"; };
 		327063AD2A93929D006D994A /* DictionaryHiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHiragana.swift; sourceTree = "<group>"; };
+		328B7C3F2A9CC98900780FEB /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				327063A32A9377D8006D994A /* Dictionary */,
 				3270639C2A936CA1006D994A /* Training */,
 				321E31792A950E2A00947484 /* test.swift */,
+				328B7C3F2A9CC98900780FEB /* CustomAlertView.swift */,
 			);
 			path = JapaneseLearning;
 			sourceTree = "<group>";
@@ -116,7 +119,6 @@
 				327063A62A93788B006D994A /* DictionaryRow.swift */,
 				327063A42A9377F0006D994A /* DictionaryItem.swift */,
 				327063A82A93831E006D994A /* DictionaryDetailView.swift */,
-				327063AD2A93929D006D994A /* DictionaryHiragana.swift */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -126,6 +128,7 @@
 			children = (
 				327063AA2A938378006D994A /* HieroglyphModel.swift */,
 				32257A492A975CBD0082359C /* TrainingViewModel.swift */,
+				327063AD2A93929D006D994A /* DictionaryHiragana.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				3207142F2A8EA8DB00C96592 /* TrainingAnswersItem.swift in Sources */,
 				320714292A8E872300C96592 /* MainMenu.swift in Sources */,
 				327063A92A93831E006D994A /* DictionaryDetailView.swift in Sources */,
+				328B7C402A9CC98900780FEB /* CustomAlertView.swift in Sources */,
 				321E317A2A950E2A00947484 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

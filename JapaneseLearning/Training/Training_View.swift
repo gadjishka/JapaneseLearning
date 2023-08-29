@@ -11,6 +11,8 @@ struct Training_View: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject private var viewModel = TrainingViewModel.shared
     @State private var tabBarBool: Bool = true
+    @State private var showAlert = false
+    
     
     var body: some View {
         ZStack {
@@ -22,13 +24,20 @@ struct Training_View: View {
                     buttonLabels: viewModel.buttonLabels,
                     correctButtonIndex: viewModel.correctButtonIndex, questionType: viewModel.questionType)
                 Button(action: {
-                    viewModel.checkAnswer(index: viewModel.choosenCard ?? -1)
+                    showAlert = viewModel.checkAnswer(index: viewModel.choosenCard ?? -1)
                 }) {
-                    Text("Продолжить")
-                        .font(.title3)
-                        .foregroundColor(.white)
+                    ZStack {
+                        Text("Продолжить")
+                            .font(.title3)
+                            .foregroundColor(.white)
+                        
+                        Color.clear
+                            .contentShape(Rectangle())
+                    }
+                    
                 }
-                .frame(width: 300, height: 50)
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
                 .background(viewModel.choosenCard != nil ? Color.green : Color.gray)
                 .cornerRadius(10)
                 .padding()
@@ -52,6 +61,21 @@ struct Training_View: View {
                     
                 }
             }
+            if showAlert {
+                Color.black.opacity(0.5)
+                    .edgesIgnoringSafeArea(.all)
+                    .onTapGesture {
+                        showAlert = false
+                    }
+                
+                VStack {
+                    Spacer()
+                    
+                    CustomAlertView(isPresented: $showAlert, mainText: "Неправильно", buttonText: "Попробуй снова😑")
+                    
+                    Spacer()
+                }
+            }
         }
         .onAppear {
             self.tabBarBool = true
@@ -60,6 +84,8 @@ struct Training_View: View {
         .onDisappear {
             self.tabBarBool = false
         }
+        
+        
     }
 }
 

@@ -48,11 +48,19 @@ struct DictionaryDetailView: View {
                     dictionaryManager.addHierogliph(hieroglyph: item)
                     item.learnHieroglyph()
                 } label: {
-                    Text("Добавить")
-                        .font(.title3)
-                        .foregroundColor(.white)
+                    
+                    ZStack {
+                        Text("Добавить")
+                            .font(.title3)
+                            .foregroundColor(.white)
+                        
+                        Color.clear
+                            .contentShape(Rectangle())
+                    }
+                    
                 }
-                .frame(width: 300, height: 50)
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
                 .background(item.learned ? Color.gray : Color.green)
                 .cornerRadius(10)
                 .shadow(radius: 7)
