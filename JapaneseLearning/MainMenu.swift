@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainMenu: View {
-    @State private var continueButtonDisabled: Bool = true
     @ObservedObject private var viewModel = TrainingViewModel.shared
     @ObservedObject private var dictionaryManager = DictionaryHiragana.shared
     @State private var showAlert: Bool = false
@@ -41,21 +40,9 @@ struct MainMenu: View {
                     .padding(.bottom, 10)
                     
                     
-                    NavigationLink {
-                        Training_View()
-                    } label: {
-                        Text("Продолжить")
-                            .foregroundColor(.white)
-                            .opacity(continueButtonDisabled ? 0.3 : 1.0)
-                    }
-                    .frame(width: 140, height: 50)
-                    .background(continueButtonDisabled ?  Color.gray : Color(red: 0.4627, green: 0.8392, blue: 1.0))
-                    .cornerRadius(10)
-                    .padding(.bottom, 10)
-                    .disabled(continueButtonDisabled)
                     
                     NavigationLink {
-                        Training_View()
+                        //Training_View()
                     } label: {
                         Text("Рекорды")
                             .foregroundColor(.white)
