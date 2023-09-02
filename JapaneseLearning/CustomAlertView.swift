@@ -15,8 +15,9 @@ struct CustomAlertView: View {
     var body: some View {
         VStack(spacing: 60) {
             Text(mainText)
-                .font(.title)
+                .font(.system(size: 22))
                 .foregroundColor(.red)
+                .padding(5)
             
             Button {
                 isPresented = false
@@ -31,7 +32,7 @@ struct CustomAlertView: View {
             .cornerRadius(10)
             
         }
-        .frame(width: 250, height: 250) // Set the desired size
+        .frame(width: 250, height: 250)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 10)
@@ -39,6 +40,6 @@ struct CustomAlertView: View {
 }
 struct CustomAlertView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomAlertView(isPresented: .constant(true), mainText: "Неправильно", buttonText: "Попробуй снова😑")
+        CustomAlertView(isPresented: .constant(true), mainText: "Ты не можешь начать, ты еще не изучил ни одного иероглифа", buttonText: "Изучи и возвращайся")
     }
 }
